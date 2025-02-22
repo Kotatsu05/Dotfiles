@@ -49,5 +49,4 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 
 # Shell integrations
 eval "$(fzf --zsh)"
-
-eval "$(oh-my-posh init zsh --config ~/tokyonight_storm.omp.json)"
+eval "$(starship init zsh)"
