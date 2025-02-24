@@ -1,1 +1,17 @@
-sudo pacman -S polkit picom feh fzf zsh neovim ttf-firacode-nerd brightnessctl xclip gcc makefie clangd libx11 libxft libxinerama stow starship
+sudo pacman -S polkit --noconfirm
+sudo pacman -S picom --noconfirm
+sudo pacman -S feh --noconfirm
+sudo pacman -S fzf --noconfirm
+sudo pacman -S zsh --noconfirm
+sudo pacman -S neovim --noconfirm
+sudo pacman -S ttf-firacode-nerd --noconfirm
+sudo pacman -S brightnessctl --noconfirm
+sudo pacman -S xclip --noconfirm
+sudo pacman -S gcc --noconfirm
+sudo pacman -S makefie --noconfirm
+sudo pacman -S clangd --noconfirm
+sudo pacman -S libx11 --noconfirm
+sudo pacman -S libxft --noconfirm
+sudo pacman -S libxinerama --noconfirm
+sudo pacman -S stow --noconfirm
+sudo pacman -S starship --noconfirm
