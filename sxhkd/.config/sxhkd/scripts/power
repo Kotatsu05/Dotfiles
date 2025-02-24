@@ -1,0 +1,7 @@
+#!/bin/sh
+
+rofi \
+  -show p \
+  -modi p:'rofi-power-menu --symbols-font "Symbols Nerd Font Mono"' \
+  -font "FiraMono Nerd Font Mono 10" \
+  -theme ~/.config/rofi/launcher.rasi \

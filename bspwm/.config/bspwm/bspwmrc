@@ -1,12 +1,12 @@
 #! /bin/sh
 
-pgrep -x sxhkd > /dev/null || sxhkd &
+sxhkd &
 
 ~/.config/polybar/launch.sh &
 
 picom &
 
-feh --bg-scale ~/.nixos/img/tokyo_night.png
+feh --bg-scale ~/.config/img/tokyo_night.png
 
 xsetroot -cursor_name left_ptr &
 
