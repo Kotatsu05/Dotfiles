@@ -1,0 +1,79 @@
+super + Return
+	kitty
+
+super + shift + Return
+  bspc rule -a kitty -o state=floating follow=on center=true rectangle=960x540+0+0 && kitty
+
+super + shift + q
+	bspc node -c
+
+super + d
+	dmenu
+
+super + p
+  sh $HOME/.config/sxhkd/scripts/power
+
+super + o
+  sh $HOME/.config/sxhkd/scripts/notificationcenter 
+
+super + h
+	bspc node -f west
+
+super + j
+	bspc node -f south
+	
+super + k
+	bspc node -f north
+
+super + l
+	bspc node -f east
+
+supper + shift + h
+	bspc node -f west
+
+super + shift +j
+	bspc node -f south
+	
+super + shift + k
+	bspc node -f north
+
+super + shift + l
+	bspc node -f east
+
+super + {t, shift + t,s,f}
+	bspc node -t {tiled, pseudo_tiled, floating, fullscreen}
+
+super + shift + space
+	bspc node -t floating
+
+super + space
+	bspc node -f last
+
+super + shift + r
+	bspc wm -r; \
+	pkill -USR1 -x sxhkd
+
+super + {1,2,3,4,5,6,7,8,9,0}
+	bspc desktop -f {1,2,3,4,5,6,7,8,9,10}
+
+super + shift + {1,2,3,4,5,6,7,8,9,0}
+	bspc node -d {1,2,3,4,5,6,7,8,9,10}
+
+# Volume Up
+XF86AudioRaiseVolume
+    wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
+
+# Volume Down
+XF86AudioLowerVolume
+    wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+
+# Mute
+XF86AudioMute
+    wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+
+XF86MonBrightnessUp
+  brightnessctl s 10%+
+
+XF86MonBrightnessDown
+  brightnessctl s 10%-
+
