@@ -7,8 +7,11 @@ super + shift + Return
 super + shift + q
 	bspc node -c
 
+super + shift + e
+  bspc quit
+
 super + d
-	dmenu
+  sh $HOME/.config/sxhkd/scripts/launcher
 
 super + p
   sh $HOME/.config/sxhkd/scripts/power
