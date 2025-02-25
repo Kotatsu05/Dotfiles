@@ -21,7 +21,12 @@ sudo pacman -S unzip -noconfirm
 
 #Make shure git is installed
 sudo pacman -S git --noconfirm
+
+#install tmux packagemanager
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+#install nvim conig
+git clone https://github.com/Kotatsu05/nvim-config.git ~/.config/nvim
 
 #Install gtk Theme
 sudo mkdir -p /usr/share/themes
