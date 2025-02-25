@@ -29,3 +29,8 @@ sudp cp -r themes/Tokyonight-Dark /usr/share/themes
 
 sudo mkdir -p /usr/share/icons
 sudp cp -r themes/dracula-icons-main /usr/share/icons
+
+#Install yay
+git clone https://aur.archlinux.org/yay.git
+cd yay || exit
+makepkg -si
