@@ -28,6 +28,8 @@ bindkey -e
 
 export EDITOR=nvim
 
+alias ls='ls --color'
+
 # History
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
