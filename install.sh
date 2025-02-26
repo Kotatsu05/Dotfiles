@@ -22,7 +22,7 @@ sudo pacman -S unzip --noconfirm
 sudo pacman -S noto-fonts-cjk --noconfirm
 sudo pacman -S noto-fonts-emoji --noconfirm
 sudo pacman -S noto-fonts --noconfirm
-
+sudo pacman -S playerctl --noconfirm
 
 #Make shure git is installed
 sudo pacman -S git --noconfirm
