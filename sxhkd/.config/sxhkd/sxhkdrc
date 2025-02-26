@@ -84,9 +84,18 @@ XF86AudioLowerVolume
 XF86AudioMute
     wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
 
+XF86AudioPlay
+    playerctl play-pause
+
+XF86AudioNext
+    playerctl next
+
+XF86AudioPrev
+    playerctl previous
+
 XF86MonBrightnessUp
-  brightnessctl s 10%+
+    brightnessctl s 10%+
 
 XF86MonBrightnessDown
-  brightnessctl s 10%-
+    brightnessctl s 10%-
 
