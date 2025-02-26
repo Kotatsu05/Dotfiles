@@ -3,6 +3,8 @@
 xrandr --output DP-0 --mode 1920x1080 --rate 164 --primary --right-of HDMI-0 &
 
 xset m 1 1 &
+xset s off &     # Disable screen saver
+xset -dpms &    # Disable DPMS (Energy Star) features
 
 sxhkd &
 

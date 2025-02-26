@@ -4,6 +4,9 @@ super + Return
 super + shift + Return
   bspc rule -a kitty -o state=floating follow=on center=true rectangle=960x540+0+0 && kitty
 
+super + w
+  firefox
+
 super + shift + q
 	bspc node -c
 
