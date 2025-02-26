@@ -68,6 +68,10 @@ super + {z, x ,c}
 super + shift + {z, x ,c}
   bspc node -d {Discord, Spotify, Random}
 
+# screenshot
+super + shift + s
+    maim -s | tee ~/Pictures/screenshots/$(date +%Y-%m-%d-%T-selected.png) | xclip -selection clipboard -t image/png && notify-send "Screenshot saved"
+
 # Volume Up
 XF86AudioRaiseVolume
     wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
