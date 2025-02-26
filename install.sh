@@ -17,7 +17,11 @@ sudo pacman -S libxinerama --noconfirm
 sudo pacman -S stow --noconfirm
 sudo pacman -S starship --noconfirm
 sudo pacman -S zip --noconfirm
-sudo pacman -S unzip -noconfirm
+sudo pacman -S unzip --noconfirm
+sudo pacman -S noto-fonts-cjk --noconfirm
+sudo pacman -S noto-fonts-emoji --noconfirm
+sudo pacman -S noto-fonts --noconfirm
+
 
 #Make shure git is installed
 sudo pacman -S git --noconfirm

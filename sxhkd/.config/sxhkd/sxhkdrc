@@ -31,17 +31,17 @@ super + k
 super + l
 	bspc node -f east
 
-supper + shift + h
-	bspc node -f west
+super + shift + h
+	bspc node -s west
 
 super + shift +j
-	bspc node -f south
+	bspc node -s south
 	
 super + shift + k
-	bspc node -f north
+	bspc node -s north
 
 super + shift + l
-	bspc node -f east
+	bspc node -s east
 
 super + {t, shift + t,s,f}
 	bspc node -t {tiled, pseudo_tiled, floating, fullscreen}
@@ -61,6 +61,12 @@ super + {1,2,3,4,5,6,7,8,9,0}
 
 super + shift + {1,2,3,4,5,6,7,8,9,0}
 	bspc node -d {1,2,3,4,5,6,7,8,9,10}
+
+super + {z, x ,c}
+  bspc desktop -f {Discord, Spotify, Random}
+
+super + shift + {z, x ,c}
+  bspc node -d {Discord, Spotify, Random}
 
 # Volume Up
 XF86AudioRaiseVolume
