@@ -34,6 +34,9 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 #install nvim conig
 git clone https://github.com/Kotatsu05/nvim-config.git ~/.config/nvim
 
+#create screenshots directory for maim
+mkdir -p ~/Pictures/screenshots/
+
 #Install gtk Theme
 sudo mkdir -p /usr/share/themes
 sudp cp -r themes/Tokyonight-Dark /usr/share/themes

@@ -25,6 +25,7 @@ bspc config gapless_monocle true
 bspc rule -a firefox desktop="^4"
 bspc rule -a discord desktop="^1"
 bspc rule -a Spotify desktop="^2"
+bspc rule -a steam desktop="^5"
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
@@ -33,3 +34,5 @@ pgrep -x dunst > /dev/null || dunst &
 
 pgrep -x discord > /dev/null || discord &
 pgrep -x spotify > /dev/null || spotify &
+pgrep -x firefox > /dev/null || firefox &
+pgrep -x steam > /dev/null || steam &
