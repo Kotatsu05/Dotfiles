@@ -80,7 +80,7 @@
         },
         {
             "type": "terminal",
-            "key": "│ ├",
+            "key": "│ └",
             "keyColor": "blue"
         },
         {
