@@ -12,8 +12,15 @@
 	"modules-right": [
 		"network",
 		"pulseaudio",
-		"battery"
+		"battery",
+		"custom/power"
 	],
+
+	"custom/power": {
+		"format": "⏻",
+		"on-click": "wlogout",
+		"tooltip": false
+	},
 
 	"hyprland/workspaces": {
 		"disable-scroll": true,

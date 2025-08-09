@@ -17,6 +17,7 @@ window#waybar {
 #battery,
 #network,
 #clock,
+#custom-power,
 #tray,
 #workspaces,
 #pulseaudio {
@@ -31,6 +32,12 @@ window#waybar {
 
   background-color: #222222;
   color: #BB9AF7;
+}
+
+#custom-power {
+	font-weight: bold;
+	transition-duration: 120ms;
+	margin-right: 6px;
 }
 
 #workspaces button {
