@@ -4,4 +4,4 @@ sudo mkdir -p /usr/share/themes
 sudo cp -r themes/Tokyonight-Dark /usr/share/themes/
 
 sudo mkdir -p /usr/share/icons
-sudp cp -r /themes/dracula-icons/main /usr/share/icons/
+sudo cp -r /themes/dracula-icons/main /usr/share/icons/
