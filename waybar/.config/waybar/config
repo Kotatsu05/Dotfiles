@@ -32,7 +32,7 @@
 		"tooltip": false
 	},
 	"clock": {
-		"format": "󰅐 {:%H:%M}",
+		"format": "{:%d %H:%M %m}",
     "tooltip": false
 	},
 	"network": {
