@@ -119,8 +119,8 @@
             "keyColor": "green"
         },
         {
-            "type": "uptime",
-            "key": "│ ├󰅐",
+            "type": "display",
+            "key": "│ ├󰍹",
             "keyColor": "green"
         },
         {
@@ -129,8 +129,8 @@
             "keyColor": "green"
         },
         {
-            "type": "display",
-            "key": "│ └󰍹",
+            "type": "uptime",
+            "key": "│ └󰅐",
             "keyColor": "green"
         },
         {

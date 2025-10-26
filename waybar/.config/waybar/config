@@ -54,7 +54,7 @@
     ],
     "nospacing": 1,
     "format-muted": " ",
-    "on-click": "pavucontrol",
+    "on-click": "kitty wiremix",
     "tooltip": false
   },
 	"battery": {
