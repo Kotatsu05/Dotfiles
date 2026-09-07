@@ -1,0 +1,23 @@
+#!/bin/sh
+
+if pgrep rofi >/dev/null; then
+    pkill -f rofi
+    exit 0
+fi
+
+options=$(printf "NONE\nLOCK\nPOWER OFF\nREBOOT\nSLEEP" | rofi -dmenu -p "OPTION")
+
+case "$options" in
+	"LOCK")
+		gtklock -s ~/.config/gtklock/styles.css
+		;;
+	"POWER OFF")
+		loginctl poweroff
+		;;
+	"REBOOT")
+		loginctl reboot
+		;;
+	"SLEEP")
+		echo "eepy"
+		;;
+esac

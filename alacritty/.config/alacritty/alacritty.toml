@@ -1,0 +1,18 @@
+general.import = [
+	"~/.config/alacritty/tokyo-night.toml"
+]
+
+[font]
+size = 10.0
+
+[font.normal]
+family = "FiraMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "FiraMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "FiraMono Nerd Font"
+style = "Italic"

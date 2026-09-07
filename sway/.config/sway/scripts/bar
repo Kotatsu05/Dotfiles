@@ -1,0 +1,10 @@
+#! /bin/sh
+
+while [ true ]; do
+	BAT=$(cat /sys/class/power_supply/BAT0/capacity)
+	DAT=$(date +"%d.%m.%Y %H:%M")
+	MEM=$(free -h | awk '/^Mem:/ {printf $3}')
+	USE=$(free -h | awk '/^Mem:/ {printf $7}')
+	printf "%s %s | %s/%s| %s\n" $DAT $MEM $USE $BAT
+	sleep 10
+done
