@@ -23,8 +23,15 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 source "$_ZSH_CONFIG/plugin/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source "$_ZSH_CONFIG/plugin/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+source "$_ZSH_CONFIG/plugin/zsh-history-substring-search/zsh-history-substring-search.zsh"
 
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+bindkey -M emacs '^P' history-substring-search-up
+bindkey -M emacs '^N' history-substring-search-down
 
 if command -v eza >/dev/null 2>&1;then
 	alias ls='eza --icons'
@@ -33,7 +40,13 @@ if command -v eza >/dev/null 2>&1;then
 	alias tree='eza --tree --icons'
 fi
 
+if ! command -v doas >/dev/null 2>&1;then
+	alias doas='sudo'
+fi
+
 alias rg='rg --color=auto'
 alias diff='diff --color=auto'
 
-ufetch
+if command -v fastfetch >/dev/null 2>&1;then
+	fastfetch
+fi
